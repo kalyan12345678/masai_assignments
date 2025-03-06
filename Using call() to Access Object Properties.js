@@ -1,12 +1,14 @@
-function greet(time){
+function greet(){
 
-    console.log(this.user,time)
+    console.log(this.user,this.age)
 }
 let obj1={
-    user:"kalyan"
+    user:"kalyan",
+    age:25
 }
 let obj2={
-    user:"gopika"
+    user:"gopika",
+    age: 21
 }
-greet.call(obj2,"good morning")
-greet.call(obj1,"good afternoon")
+greet.call(obj2)
+greet.call(obj1)
