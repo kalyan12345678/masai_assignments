@@ -1,38 +1,30 @@
-
-
 function createOrderManager(){
     let orders={}
     return{
       addOrder(order){
         orders.push(order)
-      
+      },
        updateOrder(id, newStatus){
          
           orders.status=newStatus
-       
-          
-        
+       },
         filterOrders(status){
           orders.filter((ele)=>{
             return ele==status
           })
-        
+        },
           sortOrders(by){
             let orders=order.sort((a,b)=>{
               return a.localeCompare(b)
             })
-          
+          },
             getTotalRevenue(){
               let orders = order.reduce((acc,curr)=>{
                 acc=acc.price+curr.price
                 return acc
               })
             }
-          }
         }
-       }
-      }
-    }
    }
     
   
