@@ -16,5 +16,5 @@ fetchData().then((resp)=>{
 }).catch((resp)=>{
     console.log("Error fetching data:", resp)
 })
-  fetchData()
+ fetchData()
   
