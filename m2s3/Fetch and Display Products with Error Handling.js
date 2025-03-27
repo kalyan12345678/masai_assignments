@@ -17,6 +17,5 @@ async function fetchProducts() {
       console.error('Error:', 'Failed to fetch products. Please try again later.')
     }
   }
-  
-  fetchProducts();
+  fetchProducts()
   
