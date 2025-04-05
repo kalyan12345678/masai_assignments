@@ -9,10 +9,10 @@ const checkout = {
         : item.price;
       
       // Validate the price
-      if (typeof price !== 'number' || isNaN(price)) {
-        console.log("Invalid price.");
-        return;
-      }
+      // if (typeof price !== 'number' || isNaN(price)) {
+      //   console.log("Invalid price.");
+      //   return;
+      // }
       
       this.items.push(item);
       this.total += price;
