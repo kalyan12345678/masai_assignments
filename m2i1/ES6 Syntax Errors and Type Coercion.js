@@ -3,16 +3,16 @@ const checkout = {
     total: 0,
   
     addItem(item) {
-      // Convert price to number if it's a string
+      
       const price = typeof item.price === 'string' 
         ? parseFloat(item.price) 
         : item.price;
       
-      // Validate the price
-      // if (typeof price !== 'number' || isNaN(price)) {
-      //   console.log("Invalid price.");
-      //   return;
-      // }
+    
+      if (typeof price !== 'number' || isNaN(price)) {
+        console.log("Invalid price.");
+        return;
+      }
       
       this.items.push(item);
       this.total += price;
