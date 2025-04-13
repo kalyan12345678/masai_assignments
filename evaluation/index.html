@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       header {
+            background-color: rgb(127, 127, 135);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            color: white;
+            height: 20px;
+            line-height: 20px;
+            
+        }
+        
+        nav {
+            margin-top: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: underline;
+            
+        }
+        section{
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <header>
+            <h1><b>How Internet Works</b></h1>
+            <nav>
+                <a href="#i1" id="i1">Packets</a>
+                <a href="#i2">Protocols</a>
+                <a href="#i3">Modem</a>
+                <a href="#i4">Router</a>
+                <a href="#i5">Domain Name Server</a>
+                <a href="#i6">Webserver</a>
+                
+            </nav>
+        </header>
+    </header>
+    <section>
+        <img src="https://cdn.hswstatic.com/gif/internet-diagram.gif" alt="How does the internet works">
+        <h2 id="i1"><b>Packets</b></h2>
+        <p><i>In networking, <u style="color: rgb(49, 73, 84);">a packet is a small segment of a larger message. Each packet contains both data and information about that data</u>. The information about the packet's contents is known as the "header," and it goes at the front of the packet so that the receiving machine knows what to do with the packet. To understand the purpose of a packet header, think of how some consumer products come with assembly instructions.</i></p>
+        <hr >
+        <h2 id="i2"><b>Protocols</b></h2>
+        <p><i><u style="color: rgb(49, 73, 84);">Connecting two computers, both of which may use different hardware and run different software</u>, is one of the main challenges that the creators of the Internet had to solve. It requires the use of communications techniques that are understandable by all connected computers, just as two people who grew up in different parts of the world may need to speak a common language to understand each other.</i></p>
+        <hr>
+        <h2 id="i3"><b>Modem</b></h2>
+        <p><i><u style="color: rgb(49, 73, 84);">A modem is a device that allows computers and other devices to connect to the internet. It's a "translator" that converts digital signals from devices into analog signals that can travel over telephone lines or cable networks, and then converts the signals back to digital for your device</u>. In essence, it bridges the gap between your home network and the internet</i></p>
+        <hr>
+        <h2 id="i4"><b>Router</b></h2>
+        <p><i><u style="color: rgb(49, 73, 84);">A router is a gateway that passes data between one or more local area networks (LANs).</u>. Routers use the Internet Protocol (IP) to send IP packets containing data and IP addresses of sending and destination devices located on separate local area networks</i></p>
+        <hr>
+        <h2 id="i5">Domain Name Server</h2>
+        <p><i><u style="color: rgb(49, 73, 84);">A domain name server, also known as a DNS server, is a server that translates human-readable domain names (like google.com) into the numerical IP addresses that computers use to communicate on the internet. </u>Think of it as a "phonebook" for the internet, mapping website names to their physical locations</i></p>
+        <hr>
+        <h2 id="i6">Webserver</h2>
+        <p><i><u style="color: rgb(49, 73, 84);"> A web server is a computer system or software that delivers web content, like webpages and images, to users over the internet</u>. It uses the Hypertext Transfer Protocol (HTTP) to respond to client requests. Essentially, it stores, processes, and delivers website data to users who access it through a web Browser</i></p>
+    </section>
+    <section>
+        
+        <h3 style="text-decoration: underline;">How a web request works</h3>
+        <img src="https://codelikethis.com/lessons/www/http_request.png" alt="How a web request works">
+        <ol>
+        
+            <li>Browser Request.</li>
+            <li>WEb Server Finds The File.</li>
+            <li>Server Response.</li>
+            <li>Browser Display Page</li>
+            
+          </ol>
+          <h3 style="text-decoration: underline;">Key Terms</h3>
+          <ul>
+            <li>HTTP</li>
+            <li>DNS</li>
+            <li>TCP/IP</li>
+          </ul>
+    </section>
+    <section>
+
+          <div>
+            <table style="border: solid;">
+                <caption>
+                   <h4> Client vs Server</h4> 
+                </caption>
+                <thead style="border: solid;">
+                  <tr>
+                    <th scope="col" style="border: 1px solid rgb(160 160 160);">Function</th>
+                    <th scope="col" style="border: 1px solid rgb(160 160 160);">Client</th>
+                    <th scope="col" style="border: 1px solid rgb(160 160 160);">Server</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" style="border: 1px solid rgb(160 160 160);">User Interaction</th>
+                    <td style="border: 1px solid rgb(160 160 160);">Handles user interface elements, input events, and direct user actions</td>
+                    <td style="border: 1px solid rgb(160 160 160);">Primarily responsible for processing requests, managing data, and generating responses</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="border: 1px solid rgb(160 160 160);">Data Retrieval</th>
+                    <td style="border: 1px solid rgb(160 160 160);">Requests data from the server</td>
+                    <td style="border: 1px solid rgb(160 160 160);">Stores, manages, and provides data to clients</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="border: 1px solid rgb(160 160 160);">Data Processing</th>
+                    <td style="border: 1px solid rgb(160 160 160);">Can perform some data processing locally, like validation or formatting</td>
+                    <td style="border: 1px solid rgb(160 160 160);">Handles complex data processing, database interactions, and logic</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="border: 1px solid rgb(160 160 160);">Content Rendering</th>
+                    <td style="border: 1px solid rgb(160 160 160);">Renders the user interface, displaying data and other visual elements</td>
+                    <td style="border: 1px solid rgb(160 160 160);">May generate the initial HTML content for the page</td>
+                  </tr>
+                </tbody>
+                
+              </table>
+          </div>
+          <div>
+            <table style="border: solid;">
+                <caption  style="line-height: 100px">
+                    <h4> Static vs Dynamic Websites</h4>
+                </caption>
+                <thead style="border: solid;">
+                  <tr>
+                    <th scope="col" style="border: 1px solid rgb(160 160 160);">Feature</th>
+                    <th scope="col" style="border: 1px solid rgb(160 160 160);">Static Website</th>
+                    <th scope="col" style="border: 1px solid rgb(160 160 160);">Dynamic Website</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" style="border: 1px solid rgb(160 160 160);">Content</th>
+                    <td style="border: 1px solid rgb(160 160 160);">Fixed, pre-generated content</td>
+                    <td style="border: 1px solid rgb(160 160 160);">Content generated on-the-fly based on user interaction or database</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="border: 1px solid rgb(160 160 160);">Interactivity</th>
+                    <td style="border: 1px solid rgb(160 160 160);">Limited or none</td>
+                    <td style="border: 1px solid rgb(160 160 160);">High, with features like user logins, comments, etc.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="border: 1px solid rgb(160 160 160);">Loading Speed</th>
+                    <td style="border: 1px solid rgb(160 160 160);">Generally faster</td>
+                    <td style="border: 1px solid rgb(160 160 160);">Can be slower due to server-side processing</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="border: 1px solid rgb(160 160 160);">Development</th>
+                    <td style="border: 1px solid rgb(160 160 160);">Simpler and faster development</td>
+                    <td style="border: 1px solid rgb(160 160 160);">More complex and time-consuming development</td>
+                  </tr>
+                </tbody>
+                
+              </table>
+          </div>
+    </section>
+    <section>
+        
+        <div>
+            <h2 style="text-decoration: underline;">How the client and server interact</h2>
+           
+            <img src="https://i0.wp.com/javachallengers.com/wp-content/uploads/2023/07/client-server.png?resize=736%2C634&ssl=1" alt="How the client and server interact.">
+        </div>
+        <div>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=youtube_searched_for" />
+            <h2>
+                Web communication
+                <span class="material-symbols-outlined">
+                    
+                    </span>
+            </h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zol6ZAq74uA?si=uNCinEOCKxsVSy2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              
+        </div>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pin_drop" />
+        <h2>
+            Major Internet Data Center
+            <span class="material-symbols-outlined icon">pin_drop</span>
+        </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62200.70652850494!2d77.53708687123748!3d13.000981620973116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smajor%20internet%20data%20centers.!5e0!3m2!1sen!2sin!4v1744532760986!5m2!1sen!2sin" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            
+
+        </div>
+    </section>
+    <article>
+        <h2>Ipl SRH VS PBKS</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQHvQhgl3Sg?si=3tS1df2N381ZkymY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+    </article>
+    
+    <footer>
+        <section>
+            <fieldset>
+                <legend><h5>What is a client</h5></legend>
+              
+                <div>
+                    <input type="radio" id="a person or organization using the services of a lawyer or other professional person or company." name="client" value="" checked />
+                    <label for="a person or organization using the services of a lawyer or other professional person or company.">a person or organization using the services of a lawyer or other professional person or company.</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="a computer system that provides resources, data, services, or programs to other computers (clients) over a network" name="client" value="" />
+                  <label for="a computer system that provides resources, data, services, or programs to other computers (clients) over a network">a computer system that provides resources, data, services, or programs to other computers (clients) over a network</label>
+                </div>
+                <legend><h5>Feedback</h5></legend>
+                <textarea name="feedback" id=""></textarea>
+                <input type="submit" value="Submit" />
+              </fieldset>
+              
+        </section>
+        <section>
+            <h3> My Contact Details </h3>
+            <p>Name: Kalyan alladi <br> phone no : 9398450134 <br>Email: kalyanalladi234@gmail.com </p>
+        </section>
+
+    </footer>
+</body>
+</html>
