@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Profile Cards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      width: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .designation {
+      font-size: 0.9rem;
+      color: #3b82f6;
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .socials a {
+      margin: 0 5px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #3b82f6;
+    }
+
+    
+    @media (max-width: 800px) {
+      .card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="User" class="avatar">
+    <h2>Jane Doe</h2>
+    <p class="designation">Designer</p>
+    <p class="bio">Creating beautiful and simple designs.</p>
+    <div class="socials">
+      <a href="#">🐦</a>
+      <a href="#">💼</a>
+      <a href="#">📸</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="User" class="avatar">
+    <h2>John Smith</h2>
+    <p class="designation">Developer</p>
+    <p class="bio">Building websites and apps.</p>
+    <div class="socials">
+      <a href="#">🐦</a>
+      <a href="#">💼</a>
+      <a href="#">📸</a>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
