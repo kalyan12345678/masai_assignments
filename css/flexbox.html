@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple News Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background: #333;
+            color: white;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav {
+            background: #444;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            overflow-x: auto;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            white-space: nowrap;
+        }
+        
+        main {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        .news {
+            flex: 70%;
+            background: #f0f0f0;
+            padding: 15px;
+        }
+        
+        .trending {
+            width: 250px;
+            background: #e0e0e0;
+            padding: 15px;
+            position: sticky;
+            top: 70px;
+            height: fit-content;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: auto;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            .trending {
+                width: 100%;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Portal</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Weather</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Tech</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>News Story 1</h3>
+                <p>This is a summary of the first news story.</p>
+            </article>
+            <article>
+                <h3>News Story 2</h3>
+                <p>This is a summary of the second news story.</p>
+            </article>
+        </section>
+        
+        <aside class="trending">
+            <h2>Trending</h2>
+            <p>Topic 1</p>
+            <p>Topic 2</p>
+            <p>Topic 3</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 News Portal</p>
+    </footer>
+</body>
+</html>
