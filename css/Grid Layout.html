@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 25% 75%;
+        }
+
+        aside {
+            background: #34495e;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .content {
+            padding: 1rem;
+            background: #ecf0f1;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                position: static;
+                height: auto;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Dashboard</h1>
+    </header>
+
+    <div class="dashboard">
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li>Dashboard</li>
+                <li>Portfolio</li>
+                <li>Analytics</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h2>Overview</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Value</h3>
+                    <p>$125,000</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Daily Change</h3>
+                    <p>+2.5%</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Top Asset</h3>
+                    <p>Tech Stocks</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Risk Level</h3>
+                    <p>Medium</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Portfolio Dashboard</p>
+    </footer>
+</body>
+</html>
